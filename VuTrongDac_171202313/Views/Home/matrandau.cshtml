@@ -1,0 +1,16 @@
+﻿@using sanphamDB
+@model List<sanphamDB.TRANDAU>
+    <div class="container">
+
+        @foreach (var item in Model)
+        {
+
+                <div class="col-lg-3">
+                    <a href="@Url.Action("doidau", "Home", new { ma = item.CLBNha,ma2=item.CLBKhach })">@item.NgayThiDau</a>
+                </div>
+           
+
+
+        }
+
+    </div>

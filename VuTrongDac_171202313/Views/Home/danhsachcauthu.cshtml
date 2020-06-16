@@ -1,0 +1,42 @@
+﻿@using sanphamDB
+@model List<sanphamDB.CAUTHU>
+@{
+    ViewBag.Title = "danhsachcauthu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Huấn luyện viên của đội </h2>
+<h1>@ViewBag.name</h1>
+@{ var s1 = "~/Content/images/" + ViewBag.hlv.HuanLuyenVienID + ".jpeg";
+
+        }
+    <div class="container">
+        <div class="agile_top_brands_grids">
+            <div class="col-lg-2">
+                <div class="hover14 column">
+                    <a href=""><img title=" " alt=" " src=@s1 class="img-responsive" /></a>
+                    <p>@ViewBag.hlv.TenHLV</p>
+                    <h4>@ViewBag.hlv.QuocTich</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2>Danh sách cầu thủ của đội</h2> <h1>@ViewBag.name</h1>
+    <div class="container">
+        <div class="agile_top_brands_grids">
+            @foreach (sanphamDB.CAUTHU item in Model)
+            {
+                var s = "~/Content/images/" + @item.CauThuID + ".jpeg";
+
+                <div class="col-lg-2">
+                    <div class="hover14 column">
+                        <a href="@Url.Action("thongtin","Home",new { ma = item.CauThuID})"><img title=" " alt=" " src=@s class="img-responsive" /></a>
+                        <p>@item.HoVaTen</p>
+                        <h4>@item.SoAo</h4>
+                        <h4>@s</h4>
+                    </div>
+                </div>
+
+            }
+        </div>
+    </div>
+

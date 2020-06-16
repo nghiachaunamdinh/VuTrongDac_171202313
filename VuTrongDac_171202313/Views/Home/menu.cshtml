@@ -1,0 +1,21 @@
+﻿@using sanphamDB
+@model List<sanphamDB.SANVANDONG>
+@{
+    int i = 0;
+}
+    <div class="container" style="background-color:aqua;width:100%">
+        @foreach (var item in Model)
+        {
+            i = i + 1;
+            <div class="col-lg-3">
+                <a href="@Url.Action("matrandau","Home",new { ma = item.SanVanDongID})">@item.TenSan</a>
+            </div>
+
+
+            if (i % 4 == 0)
+            {
+                <div style="clear:both"></div>
+            }
+
+        }
+     </div>

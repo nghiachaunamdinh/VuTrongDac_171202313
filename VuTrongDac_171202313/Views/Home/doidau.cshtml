@@ -1,0 +1,20 @@
+﻿@using sanphamDB
+@{
+    ViewBag.Title = "doidau";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <h3><a href="@Url.Action("danhsachcauthu","Home",new { ma =@ViewBag.clb1.CauLacBoID,hlv =@ViewBag.clb1.HuanLuyenVienID })">@ViewBag.clb1.TenCLB</a></h3>
+        </div>
+        <div class="col-lg-4">
+            <h2>doidau</h2>
+        </div>
+        <div class="col-lg-4">
+            <h3><a href="@Url.Action("danhsachcauthu","Home",new { ma =@ViewBag.clb2.CauLacBoID,hlv =@ViewBag.clb1.HuanLuyenVienID })">@ViewBag.clb2.TenCLB</a></h3>
+        </div>
+    </div>
+</div>
+
+

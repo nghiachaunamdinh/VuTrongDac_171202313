@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuTrongDac_171202313", "VuTrongDac_171202313\VuTrongDac_171202313.csproj", "{53880782-6BDD-4453-B1E7-D28FD3E09540}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sanphamDB", "sanphamDB\sanphamDB.csproj", "{217DE753-7E1D-4B41-AC8E-3B2D46308FD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53880782-6BDD-4453-B1E7-D28FD3E09540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53880782-6BDD-4453-B1E7-D28FD3E09540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53880782-6BDD-4453-B1E7-D28FD3E09540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53880782-6BDD-4453-B1E7-D28FD3E09540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{217DE753-7E1D-4B41-AC8E-3B2D46308FD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{217DE753-7E1D-4B41-AC8E-3B2D46308FD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{217DE753-7E1D-4B41-AC8E-3B2D46308FD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{217DE753-7E1D-4B41-AC8E-3B2D46308FD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43988AD7-529A-49BA-ACA1-878AC4ACC0EB}
+	EndGlobalSection
+EndGlobal
